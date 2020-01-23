@@ -1,7 +1,7 @@
 name: FDevTools
 main: moe.berd.FDevTools.Main
-version: "{pom.version}"
-api: ["1.0.0"]
+version: "${pom.version}"
+api: ["2.0.0"]
 load: STARTUP
 author: FENGberd
 description: "An developer's tools to debug easily!"

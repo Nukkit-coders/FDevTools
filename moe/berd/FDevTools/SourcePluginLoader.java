@@ -37,7 +37,7 @@ public class SourcePluginLoader implements PluginLoader {
         PluginDescription description = this.getPluginDescription(dir);
         if (description != null) {
             if (this.server.getPluginManager().getPlugin(description.getName()) != null) {
-                this.plugin.getLogger().warning("Can't load source plugin \"" + description.getName() + "\": plugin exists");
+                this.plugin.getLogger().error("Can't load source plugin \"" + description.getName() + "\": plugin exists");
                 return null;
             } else {
                 this.plugin.getLogger().info(TextFormat.AQUA + "Loading source plugin \"" + description.getName() + "\"");
